@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #fff; /* White border */
+}
+
+.navbar-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.toggle-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #666;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px; /* Space around the container */
+    gap: 10px; /* Space between navbars */
+}
+
+.navbar {
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 10px;
+    flex: 1; /* Make both navbars equal width */
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navbar-top {
+    border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+.navbar-bottom {
+    border-radius: 0 0 10px 10px; /* Rounded corners on bottom */
+    background-color: #444; /* Slightly lighter background */
+    border-top: 1px solid #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    background-size: cover;
+}
+
+header {
+    background: url('header-background.jpg') no-repeat center center; /* Header background image */
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #fff; /* White border */
+    border-radius: 0 0 20px 20px; /* Rounded corners at the bottom of the header */
+}
+
+.navbar-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.toggle-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #666;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px; /* Space around the container */
+    gap: 10px; /* Space between navbars */
+}
+
+.navbar {
+    background-color: #333; /* Dark background */
+    color: #fff;
+    padding: 10px;
+    flex: 1; /* Make both navbars equal width */
+    text-align: center;
+}
+
+.navbar-top {
+    border-radius: 10px 10px 0 0; /* Rounded corners on top */
+}
+
+.navbar-bottom {
+    border-radius: 0 0 10px 10px; /* Rounded corners on bottom */
+    background-color: #444; /* Slightly lighter background */
+    border-top: 1px solid #333;
+}
+.logo{
+    width: 89px;
+    padding-top: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+    border-bottom: 4px solid #fff;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item::before {
+    content: '';
+    display: block;
+    padding-top: 75%; /* Aspect ratio 4:3 */
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+}
+
+.gallery-item p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover p {
+    background: rgba(255, 255, 255, 0.95);
+}
