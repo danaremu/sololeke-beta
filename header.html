@@ -1,3 +1,4 @@
+<!--  -->
 <header>
   <div class="content">
     <h1 class="header-title">Emmanuel Sololeke Consulting</h1>
@@ -7,18 +8,37 @@
     <div class="navbar-container">
       <img src="./img/esc_logo.png" alt="" class="header-logo" />
 
-      <nav class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./about_us/index.html">About Us</a>
-        <a href="./services/index.html">Services</a>
-        <a href="./properties/index.html">Properties</a>
-      </nav>
+      <button class="menu-toggle">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+      </button>
 
-      <nav class="navbar-extras">
-        <a href="properties.html">Properties</a>
-        <a href="insights.html">Insights & News</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
+      <div class="navbar-block">
+        <nav class="navbar">
+          <a>home</a>
+          <div class="dropdown">
+            <a href="./about_us/index.html" alt="">about us</a>
+            <div class="dropdown-list">
+              <div class="overlay"></div>
+              <a href="./about_us/partners/index.html" class="dropdown-item"
+                >partners</a
+              >
+              <a href="./about_us/resource/index.html" class="dropdown-item"
+                >resource teams</a
+              >
+            </div>
+          </div>
+          <a href="./services/index.html">services</a>
+          <a href="./properties/index.html">properties</a>
+        </nav>
+
+        <nav class="navbar-extras">
+          <!-- <a href="careers.html">careers</a> -->
+          <a href="./insights.html">insights</a>
+          <a href="#contactus" class="action-btn">contact us</a>
+        </nav>
+      </div>
     </div>
   </div>
 </header>
