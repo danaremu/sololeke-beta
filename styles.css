@@ -359,6 +359,69 @@ footer {
     }
   }
 
+  .contactus-lane {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+
+    display: none;
+    opacity: 0;
+
+    .contactus-box {
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+    }
+
+    .contactus-header,
+    .contactus-body {
+      width: 100%;
+    }
+
+    .contactus-header {
+      padding: 0 1rem;
+      margin-bottom: 0.5rem;
+      z-index: 2;
+      margin-bottom: 2rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      .contactus-title {
+        width: fit-content;
+        font-size: 1.6rem;
+        color: inherit;
+        font-weight: bold;
+      }
+
+      .contactus-remove {
+        height: 30px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: red;
+      }
+    }
+
+    .contactus-body {
+      min-height: 140px;
+      border-radius: 16px;
+      background-color: #f8f8f8;
+      /* background-color: blue; */
+      /* height: 200dvh; */
+      transition: transform 4s ease-out;
+      /* background-color: red; */
+    }
+
+    /* Hide the div by default */
+    &#contactus:target {
+      /* display: block; */
+      opacity: 1;
+    }
+  }
+
   .address-lane {
     min-height: 50px;
     width: 100%;
@@ -402,6 +465,11 @@ footer {
           width: 100%;
           color: black;
           text-transform: capitalize;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          gap: 0;
+          flex-wrap: nowrap;
 
           img {
             height: 14px;
